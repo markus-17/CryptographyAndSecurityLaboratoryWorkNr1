@@ -4,7 +4,7 @@ package implementations
 
 import java.lang.Math.floorMod
 
-class CaesarCipher(key: Int) extends SubstitutionCipher(key: Int) {
+class CaesarCipher(key: Int) extends SubstitutionCipher {
   override protected def encryptLetter(char: Char): Char =
     (floorMod(char.toInt - 'A'.toInt + key, alphabetSize) + 'A'.toInt).toChar
 

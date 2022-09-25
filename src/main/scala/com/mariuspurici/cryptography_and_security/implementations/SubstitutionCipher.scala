@@ -2,7 +2,7 @@ package com.mariuspurici
 package cryptography_and_security
 package implementations
 
-abstract class SubstitutionCipher(key: Int) extends Cipher {
+abstract class SubstitutionCipher extends Cipher {
   protected def encryptLetter(char: Char): Char
   protected def decryptLetter(char: Char): Char
 
