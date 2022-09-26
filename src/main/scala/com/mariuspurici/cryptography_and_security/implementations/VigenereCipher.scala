@@ -21,7 +21,7 @@ class VigenereCipher(key: String) extends Cipher {
           ).toInt - 'A'.toInt),
           alphabetSize
         ) + 'A'.toInt).toChar
-      case (char, i) => char
+      case (char, _) => char
     }.mkString
 
   override def decrypt(message: String): String =
@@ -33,6 +33,6 @@ class VigenereCipher(key: String) extends Cipher {
           ).toInt - 'A'.toInt),
           alphabetSize
         ) + 'A'.toInt).toChar
-      case (char, i) => char
+      case (char, _) => char
     }.mkString
 }
