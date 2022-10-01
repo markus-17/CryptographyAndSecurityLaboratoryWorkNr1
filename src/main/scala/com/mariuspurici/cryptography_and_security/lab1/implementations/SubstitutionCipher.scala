@@ -1,5 +1,6 @@
 package com.mariuspurici
 package cryptography_and_security
+package lab1
 package implementations
 
 abstract class SubstitutionCipher extends Cipher {

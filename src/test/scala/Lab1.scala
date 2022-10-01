@@ -1,8 +1,8 @@
 // For more information on writing tests, see
 // https://scalameta.org/munit/docs/getting-started.html
 
-import com.mariuspurici.cryptography_and_security.Cipher
-import com.mariuspurici.cryptography_and_security.implementations.{
+import com.mariuspurici.cryptography_and_security.lab1.Cipher
+import com.mariuspurici.cryptography_and_security.lab1.implementations.{
   PlayFairCipher,
   AffineCipher,
   CaesarCipher,
@@ -10,9 +10,9 @@ import com.mariuspurici.cryptography_and_security.implementations.{
   VigenereCipher
 }
 
-class MySuite extends munit.FunSuite {
+class Lab1 extends munit.FunSuite {
   test("Play Fair Cipher Encryption Test Succeeded") {
-    val cipher: Cipher = PlayFairCipher(key="monarchy")
+    val cipher: Cipher = PlayFairCipher(key = "monarchy")
     val input = "instruments"
     val output = cipher.encrypt(input)
     val expectedOutput = "GATLMZCLRQXA"
@@ -20,7 +20,7 @@ class MySuite extends munit.FunSuite {
   }
 
   test("Play Fair Cipher Decryption Test Succeeded") {
-    val cipher: Cipher = PlayFairCipher(key="monarchy")
+    val cipher: Cipher = PlayFairCipher(key = "monarchy")
     val input = "gatlmzclrqxa"
     val output = cipher.decrypt(input)
     val expectedOutput = "INSTRUMENTSX"

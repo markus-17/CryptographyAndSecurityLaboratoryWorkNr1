@@ -1,4 +1,4 @@
-package com.mariuspurici.cryptography_and_security.implementations
+package com.mariuspurici.cryptography_and_security.lab1.implementations
 
 import java.lang.Math.floorMod
 

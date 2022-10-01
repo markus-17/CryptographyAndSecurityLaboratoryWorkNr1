@@ -1,5 +1,6 @@
 package com.mariuspurici
 package cryptography_and_security
+package lab1
 
 trait Cipher {
   val alphabetSize: Int = 26
