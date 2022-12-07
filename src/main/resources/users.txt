@@ -1,0 +1,3 @@
+John,not_a_password,5ZEEDOG2BTV7CBJSINCBC3JXO26K77MK,AffineCipher,CaesarCipher
+Andrew,abcdefghi,CH4MAONKRNV24EHWPF7GU4TFVPEB2AZH,AffineCipher
+Charlie,qwerty123,WSMO5IMW55QD4UBK2GKUWUYUN42D5GAL,VigenereCipher,PlayFairCipher

@@ -8,5 +8,13 @@ lazy val root = project
 
     scalaVersion := scala3Version,
 
-    libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test
+    libraryDependencies ++= Seq(
+      "org.scalameta" %% "munit" % "0.7.29" % Test,
+      "dev.zio" %% "zio" % "2.0.0",
+      "io.d11" %% "zhttp" % "2.0.0-RC11",
+
+      // Java Dependencies
+      "de.taimos" % "totp" % "1.0",
+      "commons-codec" % "commons-codec" % "1.10"
+    )
   )
